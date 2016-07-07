@@ -32,3 +32,6 @@ Dies ist Teil einer Projektarbeit des Moduls *Theoretische Informatik* an der *F
   (+ x y))
 (add 1 3)
 ```
+
+## Ausführen
+Um den Interpreter zu starten muss nur die Datei ```index.html``` im Browser ausgeführt werden.
