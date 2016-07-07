@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lisp.js</title>
+    <script src="jquery.js"></script>
+    <script src="lisp.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#run').click(function() {
+                var code = $('#code-input').val();
+                var result = L.run(code);
+                $('#output').text(result);
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .code-input {
+            width: 500px;
+            height: 300px;
+            font-family: monospace;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="code-input">Input LISP code:</label><br>
+        <textarea id="code-input" class="code-input">(defun add (x y) (+ x y))
+(let z 5)
+(if (+ 1 2)
+  (add 3 (square z))
+  (+ 2 3))</textarea><br>
+        <input type="button" id="run" value="Run">
+    </div>
+    <div style="margin-top: 20px;"><strong>Output:</strong></div>
+    <div id="output"></div>
+</body>
+</html>
