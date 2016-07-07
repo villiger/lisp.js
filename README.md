@@ -2,6 +2,9 @@
 *lisp.js* ist ein vereinfachter LISP-Interpreter der in Javascript geschrieben wurde.
 Dies ist Teil einer Projektarbeit des Moduls *Theoretische Informatik* an der *FFHS*.
 
+## Code
+Der Code ist auf ```https://guthub.com/villiger/lisp.js``` öffentlich zugänglich.
+
 ## Funktionalität
 
 ### Grundlegende Operatoren
